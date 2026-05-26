@@ -1,0 +1,56 @@
+/* Chamar o elemento pelo ID */
+
+#sub{
+    color: red;
+}
+
+/* Chamar o elemento pelo nome da tag */
+p{
+    font-size: 24px;
+}
+
+/* Chamar o elemento pela class */
+
+p.destaque{
+    background-color: #000;
+    color: #fff;
+} 
+/* Elemento irmão adjacente +  */
+#sub + p{
+    color: blue;
+}
+/* Elemento irmão ~ */
+#sub ~ div{
+    color: orange;
+}
+
+.lista li{
+    font-size: 32px
+}
+
+/* primeiro filho */
+.lista li:first-child{
+    text-transform : uppercase
+}
+
+/* ultimo filho */
+.lista li:last-child{
+    color: red;
+}
+
+/* filho por number */
+.lista li:nth-child(3){
+    color: green;
+}
+
+.lista li:nth-child(odd){
+    background-color: orange;
+}
+
+.lista li:nth-child(even){
+    background-color: blue;
+}
+/* .destaque{
+    background-color: #000;
+    color: #fff;
+} */

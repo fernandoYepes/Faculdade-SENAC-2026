@@ -1,0 +1,50 @@
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+.container{
+    background: #ddd;
+    padding: 20px;
+    height: 350px;
+    /* FLEXBOX */
+    display: flex;
+    flex-direction: row;
+    /* row  -  column  -  column-reverse  -  row-reverse */
+    flex-wrap: wrap;
+    /* no-whrap  - whrap (ele quebra linha quando nao couber) */
+
+    align-items: flex-end; /* stretch  -  baseline */
+    justify-content: center;
+    /* posso usar isso nos 2!
+    /* space-between  -  space-around  -  space-evenly */
+    /* flex-start  -  flex-end  -  center */
+
+    align-content: flex-end;
+}
+.bloco{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin: 5px;
+    font-size: 24px;
+}
+.bloco:first-child{
+    /* font-size: 48px; */
+    /* align-self: flex-start; */
+    flex-grow: 1;
+    order: 2;
+}
+.bloco:nth-child(3){     /* nth e () pra escolher qual */
+   /* font-size: 16px; */
+  /* align-self: stretch; */
+  flex-grow: 2;
+}
+.bloco:nth-child(4){
+   /* font-size: 180px; */
+}
+.bloco:nth-child(5){
+   /* font-size: 250px; */
+}
